@@ -30,7 +30,7 @@ namespace OnlineEdu.API.Controllers
         public IActionResult Delete(int id)
         {
             _testimonialService.TDelete(id);
-            return Ok("Referans alanı silindi");
+            return Ok("Referans silindi");
         }
 
         [HttpPost]
@@ -38,7 +38,7 @@ namespace OnlineEdu.API.Controllers
         {
             var newValue = _mapper.Map<Testimonial>(createTestimonialDto);
             _testimonialService.TCreate(newValue);
-            return Ok("Yeni referans alanı oluşturuldu");
+            return Ok("Yeni referans oluşturuldu");
         }
 
         [HttpPut]
@@ -46,7 +46,7 @@ namespace OnlineEdu.API.Controllers
         {
             var value = _mapper.Map<Testimonial>(updateTestimonialDto);
             _testimonialService.TUpdate(value);
-            return Ok("Referans alanı güncellendi");
+            return Ok("Referans güncellendi");
         }
     }
 }
