@@ -1,5 +1,4 @@
-﻿using OnlineEdu.DTO.DTOs.BlogCategoryDtos;
-using OnlineEdu.Entity.Entities;
+﻿using OnlineEdu.App.DTOs.BlogCategoryDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
