@@ -12,7 +12,7 @@ namespace OnlineEdu.App.DTOs.BlogDtos
         public string Title { get; set; }
         public string Content { get; set; }
         public string ImageUrl { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } = DateTime.Now;
         public int BlogCategoryID { get; set; }
     }
 }

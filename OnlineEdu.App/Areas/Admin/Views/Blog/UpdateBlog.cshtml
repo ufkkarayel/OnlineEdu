@@ -1,0 +1,26 @@
+﻿@model UpdateBlogDto
+@{
+    ViewData["Title"] = "Blog Güncelleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="BlogID" />
+    <label>Blog Başlığı</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+    <label>Resim Url</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+    <label>Blog Kategorisi</label>
+    <select asp-items="@ViewBag.categories" asp-for="BlogCategoryID" class="form-control">
+        <option>Kategori Seçiniz</option>
+    </select>
+    <br />
+    <label>İçerik</label>
+    <br />
+    <textarea type="text" asp-for="Content" style="flex:1 1 auto;width:100%" rows="5"></textarea>
+    <br />
+    <button class="btn btn-outline-success">Güncelle</button>
+
+</form>

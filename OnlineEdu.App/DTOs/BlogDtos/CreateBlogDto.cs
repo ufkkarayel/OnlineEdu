@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineEdu.DTO.DTOs.BlogDtos
+namespace OnlineEdu.App.DTOs.BlogDtos
 {
     public class CreateBlogDto
     {        
         public string Title { get; set; }
         public string Content { get; set; }
         public string ImageUrl { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } = DateTime.Now;
         public int BlogCategoryID { get; set; }
     }
 }
